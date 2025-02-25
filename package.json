@@ -9,7 +9,7 @@
     "dev": "concurrently \"npm start\" \"webpack --watch\"",
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
-    "heroku-prebuild": "npm install --dev",
+    "heroku-prebuild": "npm install --only=dev",
     "start": "node ./app.js",
     "bump": "npm run bump:patch",
     "bump:major": "./node_modules/version-bump-prompt/bin/bump.js --major --all --tag",
